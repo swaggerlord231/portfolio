@@ -1,0 +1,889 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	background-color: black;
+}
+header{
+	background: linear-gradient(to bottom, skyblue,white);
+	background-size: cover;
+}
+nav{
+	display: flex;
+	padding-top: 40px;
+}
+.icon {
+	width: 90px;
+	margin-left: 30px;
+}
+.icon img{
+	width: 70px;
+	opacity: 0.9;
+}
+.nav-link{
+	width: 100vw;
+	height: 50px;
+	background-color: inherit;
+	overflow: hidden;
+	z-index: 1;
+	position: fixed;
+}
+.nav-link ul{
+	display: flex;
+	justify-content: center;
+
+}
+.nav-link ul li{
+	padding-right: 70px;
+	list-style-type: none;	
+	text-transform: uppercase;
+	justify-content: center;
+
+
+}
+.nav-link ul li a:hover{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: yellow;
+	transition: 2s ease-out 1s ease-in;
+	border-bottom: 1px solid red;
+
+}
+
+.nav-link ul li a{
+	text-decoration: none;
+	color: white;
+}
+.nav-link ul li:nth-child(5){
+	border: 3px ridge yellow;
+	display: flex;
+	border-radius: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: red;
+	color: yellow;
+}
+.container{
+	width: 1100px;
+/*	border: 2px ridge blue;*/
+	height: 400px;
+	display: flex;
+	margin-left: 30px;
+}
+.circle-box{
+	position: relative;
+	top: 50px;
+	border-radius: 15%;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(to  left,yellow,blue,white,grey,green);
+	animation: roll 1s ease-in infinite;
+}
+@keyframes roll{
+	0%{
+		transform: rotate(80deg);
+}
+25%{
+		transform: rotate(180deg);
+}
+50%{
+		transform: rotate(240deg);
+}
+100%{
+		transform: rotate(360deg);
+}
+}
+.circle{
+
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	position: relative;
+	left: 10px;
+	border-radius: 50%;
+	animation-name: horizontal;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+@keyframes horizontal{
+	0%{
+		background-color: indigo;
+		left: 200px;
+		top: 0px;}
+25%{
+		background-color: red;
+		}
+50%{
+		background-color: yellow;
+		}
+75%{
+		background-color: darkseagreen;
+		}
+100%{
+		background-color: blue;
+		;
+
+}
+
+}
+
+.nav-text{
+/*border: 1px ridge black;*/
+width: 400px;
+height: 300px;
+/*margin-top: 70px;
+padding-top: 160px;*/
+font-size: 1.5em;
+text-transform: capitalize;
+}
+
+.nav-image{
+	background-image: url(./images/person_1.jpg);
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	border-radius: 20px;
+/*border: 1px ridge black;*/
+width: 700px;
+height: 400px;
+margin-left: 30px;
+
+padding-top: 160px;
+padding-left: 10px;
+font-size: 1.5em;
+text-transform: capitalize;
+}
+
+.nav-text span{
+	color: yellow;
+	text-transform: uppercase;
+	text-decoration:underline;
+	font-size: 1em;
+	font-style: italic;
+}
+.footer-icon {
+	display: flex;
+	margin-top: 20px;
+	color: blue;
+	width: 30px;
+	margin-left: 30px;
+}
+.footer-icon img{
+	display: flex;
+	margin-right: 20px;
+	color: blue;
+	width: 30px;
+	
+}
+
+.nav-text p{
+	font-size: 0.5em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+	#more{
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+#more a{
+	text-transform: uppercase;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+	width: 150px;
+	height: 30px;
+	display: block;
+	background-color: lightblue;
+	border: 2px solid red;
+	color: red;
+}
+
+.footer-copy{
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 40px;
+	font-size: 1em;
+	color: black;
+	padding: 0;
+margin: 0;
+	position: fixed;
+	bottom: 0;
+	border-radius: 10px;
+	animation-name: footer-copy-move;
+	animation-duration: 30s;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+
+}
+@keyframes footer-copy-move{
+	0%{
+		background-color: indigo;
+		left: 0px;
+		top: 0px;
+	}
+25%{
+		background-color: red;
+		}
+50%{
+		background-color: yellow;
+		
+		}
+75%{
+		background-color: darkseagreen;
+		}
+100%{
+		background-color: blue;
+		left: 1000px;
+		top: 0px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+.line{
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	margin: 5px;
+}
+.icon{
+	position: relative;
+	left: 270px;
+	top: -15px;
+}
+.container{
+	display: block;
+	width: 100vw;
+	margin: 0;
+	background-color: white;
+
+}
+.nav-text{
+	margin: 0;
+	padding-top: 0;
+	width: 350px;
+	height: 200px;
+}.nav-image{
+	margin: 0;
+	padding-top: 0;
+	width: 350px;
+	height: 200px;
+}
+nav{
+	position: relative;
+	}
+.hamburger{
+		position: absolute;
+		cursor: pointer;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+		overflow: hidden;
+
+	}
+	.nav-link{
+		position: relative;
+
+		left: -80px;
+		color: black;
+		height: 100px;
+		width: 50px;		
+	}
+	.nav-link ul li{
+		height: 30px;
+		width: 45px;
+		color: black;
+		padding-right: 2px;
+		display: flex;
+/*		overflow: hidden;*/
+		font-size: 0.7em;
+	/*min-width: 80px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);*/
+		z-index: 1;
+
+
+	}
+	.nav-link ul {
+		
+		position: relative;
+		background: inherit;
+		display: flex;
+		height: 100px;
+		width: 50px;
+		flex-direction: column;
+		gap: 1px;
+		color: black;
+		
+			}
+
+
+.nav-link ul li a{
+		overflow: hidden;
+		position: relative;
+		transition: all 3s ease-out;
+		clip-path: circle(100px at 90% -100%);
+		-webkit-clip-path:circle(100px at 90% -10%);
+	}
+
+	.nav-link.open {
+		clip-path: circle(100px at 90% -100%);	
+		pointer-events: all;
+		-webkit-clip-path:circle(1300px at 90% -10%);
+	}
+	nav-link li{
+		opacity: 1;
+
+	}
+	nav-link li a{
+		font-size: 0.7em;
+	}
+
+	/*nav-link li:nth-child(1){
+		transition: all 0.5s ease 0.2s;
+	}
+
+	nav-link li:nth-child(2){
+			transition: all 0.5s ease 0.4s;
+		}
+
+	nav-link li:nth-child(3){
+			transition: all 0.5s ease 0.6s;
+		}
+	nav-link li:nth-child(4){
+			transition: all 0.5s ease 0.8s;
+		}
+	nav-link li:nth-child(5){
+			transition: all 0.5s ease 0.10s;
+		}
+	nav-link li:nth-child(6){
+			transition: all 0.5s ease 0.12s;
+		}
+
+	li.fade{
+			opacity: 1;
+		}*/
+}
+
+/*header shit*/
+
+#about{
+		width: 100vw;
+		background: linear-gradient(to bottom, skyblue,white);
+		background-size: cover;
+
+	}
+
+	.container1{
+	width: 1100px;
+/*	border: 2px ridge blue;*/
+	height: 600px;
+	margin-left: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+}
+	.about-img{
+		width: 300px;
+		height: 250px;
+		background-image: url(./images/swagger2.jpg);
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+/*		border: 1px solid black;*/
+	}
+
+.about-text{
+		background: linear-gradient(to bottom, yellow,white);
+		background-size: cover;
+		width: 300px;
+		height: 250px;
+		border: 1px solid black;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		
+		line-height: 16px;
+		padding: 20px 10px;
+
+	}
+
+	.about-text h2{
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: 20px;
+		text-transform: capitalize;
+		text-decoration: underline;
+	}
+.about-text p{
+		
+		font-size: 0.7em;
+		margin-bottom: 30px;
+
+		}
+.about-text a {
+		
+		font-size: 2em;
+		width: 200px;
+		height: 200px;
+		font-style: italic;
+		text-transform: capitalize;
+		text-decoration: none;
+		border: 1px solid black;
+		background-color: lightgoldenrodyellow;
+		color: black;
+		position: relative;
+		top: 30px;
+		left: 190px;
+		border-radius: 10px;
+		}
+
+.about-text a:hover{
+		background: linear-gradient(to bottom,skyblue,yellow);
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+	body{
+	width: 100vw;
+	height: 100vh;
+}
+.container1{
+	display: inline-block;
+	border: none;
+		}
+}
+
+
+/*container 1 shit done*/
+
+#services{
+	width: 100vw;
+	height: 700px;
+	background: linear-gradient(to bottom,yellow,yellowgreen,lightgreen,white);
+	background-size: cover;
+
+}
+
+.container2{
+	width: 1100px;
+	border: 2px ridge blue;
+	height: 500px;
+	margin-left: 30px;
+	display: flex;
+	justify-content: space-around;
+		}
+.services-img{
+	width: 300px;
+	height: 200px;
+	background-color: lightgreen;
+	text-align: center;	
+	text-transform: capitalize;
+	align-self: center;
+	line-height: 1em;
+	padding: 5px;
+	color: grey;
+}
+.services-img h3, p{
+	margin: 10px;
+	padding: 5px;
+}
+.services-img p{
+	font-size: 0.7em;
+	font-style: italic;
+}
+.services-head{
+	width: 400px;
+	height: 100px;
+	text-align: center;	
+	text-transform: capitalize;
+	align-self: center;
+	line-height: 2em;
+	font-size: 1.8em;
+	position: relative;
+	left: 350px;
+	top: 120px;
+	color: green;
+}
+.subscribe button{
+	width: 150px;
+	height: 50px;
+	background: linear-gradient(to top,lightgreen,white);
+	background-size: cover;
+	color: grey;
+	position: relative;
+	align-self: center;
+	top: -110px;
+	left: 500px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.subscribe button:hover{
+	background: yellowgreen;
+	color: tomato;
+}
+
+
+@media screen and (max-width: 768px){
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+	body{
+	width: 100vw;
+	height: 100vh;
+}
+#services{
+	background: linear-gradient(to top,lightgreen,white);
+	background-size: cover;
+	height: 850px;
+	width: 375px;
+
+}
+.container2{
+	width: 400px;
+	height: 100vh;
+	display: inline-block;
+	border: none;
+		}
+	.services-head{
+		width: 300px;
+		height: 100px;
+		position: relative;
+		left: 20px;
+		top: 45px;
+		font-size: 1.2em;
+		line-height: 15px;
+		text-align: center;
+	}
+	.services-img{
+		margin: 7px;
+	}
+	.subscribe button{
+		position: relative;
+		align-self: center;
+		left: 100px ;
+		top: -30px;
+			}
+	.subscribe button:hover{
+			color: tomato;
+			background: greenyellow;
+		}
+}
+
+/*service shit done*/
+
+#gallery{
+	width: 100vw;
+	height: 600px;
+	background: aqua;
+	display: block;
+}
+.container3{
+	width: 1100px;
+	height: 500px;
+/*	background-color: grey;*/
+	display: flex;
+	margin-left: 30px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery-img1{
+	width: 200px;
+	height: 200px;
+	align-self: center;
+	background-image: url(./images/1.jpg);
+	background-size: cover;
+	
+}
+
+.gallery-text{
+	font-size: 2em;
+	text-transform: capitalize;
+	text-align: center;
+	margin-top: 10px;
+
+}
+@media screen and (max-width: 768px){
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+	body{
+	width: 100vw;
+	height: 100vh;
+}
+#gallery{
+	background: linear-gradient(to top,lightgreen,white);
+	background-size: cover;
+	height: 850px;
+	width: 400px;
+	flex-direction: column;
+
+}
+.container3{
+	width: 400px;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+
+	margin: 1px;
+
+		}
+	.gallery-img1{
+		width: 150px;
+		height: 100px;
+		position: relative;
+		padding-left: 20px;
+		font-size: 1.2em;
+		line-height: 15px;
+		text-align: center;
+
+
+	}
+	.services-img{
+		margin: 7px;
+	}
+}
+/*gallery section shit done*/
+
+#contact-me{
+	background-image: url(./images/weed.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 600px;
+	
+	display: flex;
+}
+.container4{
+	width: 1100px;
+	height: 500px;
+	display: flex;
+	margin-left: 30px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contact-text{
+	margin-top: 100px;
+	width: 500px;
+	height: 400px;
+	align-self: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	text-transform: capitalize;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+}
+.contact-text1{
+
+	margin-top: 100px;
+	width: 500px;
+	height: 400px;
+	align-self: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	text-transform: capitalize;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+
+
+}
+fieldset{
+	border: 0;
+}
+#same{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-radius: 10px;
+	width: 220px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid lightgreen;
+	margin-top: 40px;
+	padding-left: 10px;
+
+}
+#same1{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-radius: 10px;
+	width: 443px;
+	border: 1px solid lightgreen;
+	height: 50px;
+	display: block;
+	margin-left: 7px;
+	margin-top: 20px;
+	padding-left: 10px;
+}#textarea{
+	width: 443px;
+	height: 100px;
+	display: block;
+	margin-left: 7px;
+	border: 1px solid lightgreen;
+	border-radius: 10px;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+}
+.myinfo{
+	background-color: rgba(0, 255, 0, 0.2);
+	width: 217px;
+	position: relative;
+	margin-left: 120px;
+	color: tomato;
+	border-radius: 10px;
+}
+
+.contact-text1 button{
+	height: 40px;
+	width: 100px;
+	text-transform: capitalize;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border: 1px solid lightgreen;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.contact-text1 button:hover{
+	background: linear-gradient(to right,lightgreen,white);
+	color: tomato;
+}
+legend{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: ghostwhite;
+}
+
+
+@media screen and (max-width: 768px){
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+	body{
+	width: 100vw;
+	height: 100vh;
+}
+#contact-me{
+	background: linear-gradient(to top,lightgreen,white);
+	background-size: cover;
+	height: 900px;
+	width: 400px;
+	flex-direction: column;
+
+}
+.container4{
+	width: 400px;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	margin: 1px;
+
+		}
+		.contact-text{
+			margin-top: 0;
+			padding-top: 0;
+			width: 400px;
+			height: 450px;
+		}
+	.contact-text1{
+		width: 400px;
+		height: 450px;
+		position: relative;
+		padding: 5px;
+		font-size: 1.2em;
+		line-height: 15px;
+		margin-top: 20px;
+		
+		text-align: center;
+}
+.myinfo{
+	margin-left: 80px;
+	
+}
+#same{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-radius: 10px;
+	width: 180px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid lightgreen;
+	margin-top: 40px;
+	padding-left: 10px;
+
+}
+#same1{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-radius: 10px;
+	width: 373px;
+	border: 1px solid lightgreen;
+	height: 50px;
+	display: block;
+	margin-left: 7px;
+	margin-top: 20px;
+	padding-left: 10px;
+}#textarea{
+	width: 373px;
+	height: 100px;
+	display: block;
+	margin-left: 7px;
+	border: 1px solid lightgreen;
+	border-radius: 10px;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+		
+		}
+}
