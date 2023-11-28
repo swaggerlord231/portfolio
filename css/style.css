@@ -14,10 +14,13 @@ header{
 nav{
 	display: flex;
 	padding-top: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .icon {
 	width: 90px;
-	margin-left: 30px;
+	margin-left: 5px;
+	margin-right: 0px;
+	position: fixed;
 }
 .icon img{
 	width: 70px;
@@ -32,17 +35,17 @@ nav{
 	position: fixed;
 }
 .nav-link ul{
+	width: 800px;
 	display: flex;
-	justify-content: center;
-
+	position: relative;
+	left: 350px;
+	justify-content: space-evenly;
+	align-self: center;
 }
 .nav-link ul li{
-	padding-right: 70px;
 	list-style-type: none;	
 	text-transform: uppercase;
 	justify-content: center;
-
-
 }
 .nav-link ul li a:hover{
 	background-color: rgba(0, 0, 0, 0.7);
@@ -67,7 +70,6 @@ nav{
 }
 .container{
 	width: 1100px;
-/*	border: 2px ridge blue;*/
 	height: 400px;
 	display: flex;
 	margin-left: 30px;
@@ -135,31 +137,25 @@ nav{
 }
 
 .nav-text{
-/*border: 1px ridge black;*/
 width: 400px;
 height: 300px;
-/*margin-top: 70px;
-padding-top: 160px;*/
 font-size: 1.5em;
 text-transform: capitalize;
 }
 
 .nav-image{
-	background-image: url(./images/person_1.jpg);
+	background-image: url(../images/swag5.jpg);
 	background-size: cover;
-
 	background-repeat: no-repeat;
 	border-radius: 20px;
-/*border: 1px ridge black;*/
-width: 700px;
-height: 400px;
-margin-left: 30px;
-
-padding-top: 160px;
-padding-left: 10px;
-font-size: 1.5em;
-text-transform: capitalize;
-}
+	width: 700px;
+	height: 400px;
+	margin-left: 30px;
+	padding-top: 160px;
+	padding-left: 10px;
+	font-size: 1.5em;
+	text-transform: capitalize;
+	}
 
 .nav-text span{
 	color: yellow;
@@ -189,7 +185,7 @@ text-transform: capitalize;
 	padding-top: 10px;
 
 }
-	#more{
+#more{
 		margin-top: 30px;
 		margin-left: 30px;
 	}
@@ -215,7 +211,7 @@ text-transform: capitalize;
 	font-size: 1em;
 	color: black;
 	padding: 0;
-margin: 0;
+	margin: 0;
 	position: fixed;
 	bottom: 0;
 	border-radius: 10px;
@@ -282,14 +278,14 @@ body{
 	width: 100vw;
 	margin: 0;
 	background-color: white;
-
 }
 .nav-text{
 	margin: 0;
 	padding-top: 0;
 	width: 350px;
 	height: 200px;
-}.nav-image{
+}
+.nav-image{
 	margin: 0;
 	padding-top: 0;
 	width: 350px;
@@ -304,11 +300,9 @@ nav{
 		transform: translate(-5%, -50%);
 		z-index: 2;
 		overflow: hidden;
-
 	}
 	.nav-link{
 		position: relative;
-
 		left: -80px;
 		color: black;
 		height: 100px;
@@ -322,8 +316,6 @@ nav{
 		display: flex;
 /*		overflow: hidden;*/
 		font-size: 0.7em;
-	/*min-width: 80px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);*/
 		z-index: 1;
 
 
@@ -337,10 +329,8 @@ nav{
 		width: 50px;
 		flex-direction: column;
 		gap: 1px;
-		color: black;
-		
-			}
-
+		color: black;		
+	}
 
 .nav-link ul li a{
 		overflow: hidden;
@@ -363,30 +353,6 @@ nav{
 		font-size: 0.7em;
 	}
 
-	/*nav-link li:nth-child(1){
-		transition: all 0.5s ease 0.2s;
-	}
-
-	nav-link li:nth-child(2){
-			transition: all 0.5s ease 0.4s;
-		}
-
-	nav-link li:nth-child(3){
-			transition: all 0.5s ease 0.6s;
-		}
-	nav-link li:nth-child(4){
-			transition: all 0.5s ease 0.8s;
-		}
-	nav-link li:nth-child(5){
-			transition: all 0.5s ease 0.10s;
-		}
-	nav-link li:nth-child(6){
-			transition: all 0.5s ease 0.12s;
-		}
-
-	li.fade{
-			opacity: 1;
-		}*/
 }
 
 /*header shit*/
@@ -398,9 +364,8 @@ nav{
 
 	}
 
-	.container1{
+.container1{
 	width: 1100px;
-/*	border: 2px ridge blue;*/
 	height: 600px;
 	margin-left: 30px;
 	display: flex;
@@ -411,7 +376,7 @@ nav{
 	.about-img{
 		width: 300px;
 		height: 250px;
-		background-image: url(./images/swagger2.jpg);
+		background-image: url(../images/swagger2.jpg);
 		border-top-right-radius: 20px;
 		border-top-left-radius: 20px;
 /*		border: 1px solid black;*/
@@ -425,13 +390,12 @@ nav{
 		border: 1px solid black;
 		border-bottom-right-radius: 20px;
 		border-bottom-left-radius: 20px;
-		
 		line-height: 16px;
 		padding: 20px 10px;
 
 	}
 
-	.about-text h2{
+.about-text h2{
 		text-align: center;
 		font-size: 1.5em;
 		margin-bottom: 20px;
@@ -621,18 +585,17 @@ nav{
 .container3{
 	width: 1100px;
 	height: 500px;
-/*	background-color: grey;*/
 	display: flex;
 	margin-left: 30px;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .gallery-img1{
-	width: 200px;
+	width: 300px;
 	height: 200px;
 	align-self: center;
-	background-image: url(./images/1.jpg);
+	background-image: url(../images/swag3.jpg);
 	background-size: cover;
 	
 }
@@ -669,11 +632,10 @@ nav{
 	height: 100vh;
 	display: flex;
 	justify-content: space-around;
-
 	margin: 1px;
-
 		}
-	.gallery-img1{
+
+.gallery-img1{
 		width: 150px;
 		height: 100px;
 		position: relative;
@@ -681,8 +643,6 @@ nav{
 		font-size: 1.2em;
 		line-height: 15px;
 		text-align: center;
-
-
 	}
 	.services-img{
 		margin: 7px;
@@ -691,7 +651,7 @@ nav{
 /*gallery section shit done*/
 
 #contact-me{
-	background-image: url(./images/weed.jpg);
+	background-image: url(../images/weed.jpg);
 	background-size: cover;
 	width: 100vw;
 	height: 600px;
@@ -830,13 +790,13 @@ legend{
 	margin: 1px;
 
 		}
-		.contact-text{
+.contact-text{
 			margin-top: 0;
 			padding-top: 0;
 			width: 400px;
 			height: 450px;
 		}
-	.contact-text1{
+.contact-text1{
 		width: 400px;
 		height: 450px;
 		position: relative;
